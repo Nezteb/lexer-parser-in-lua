@@ -66,7 +66,7 @@ local function advance()
     -- if we're not past the end, copy current lexeme into vars
     if lexer_out_string ~= nil then
         lexstr, lexcat = lexer_out_string, lexer_out_category
-        print("LEXEME: "..lexstr.."\tCATEGORY: "..lexcat)
+        --print("LEXEME: "..lexstr.."\tCATEGORY: "..lexcat)
 
         if lexcat==ID or lexcat==NUMLIT or lexstr==")" then
             lexit.preferOp();
